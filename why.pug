@@ -1,0 +1,25 @@
+section
+  h2 I hate PowerPoint
+  img.featured(src='img/garbage.jpg')
+section
+  h2 Reveal.js
+  img.screenshot(src='img/reveal.png')
+  aside.notes Even has speaker notes with now &amp; next, etc...
+section
+  h2 But
+  blockquote “Unzip and replace the example contents in index.html with your own”
+section
+  h2 Revelry
+  pre
+    code
+      | $ <b>revelry new --pug my-awesome-presentation</b>
+      | my-awesome-presentation/Revfile.json
+      | my-awesome-presentation/slides.pug
+      | my-awesome-presentation/.gitignore
+      | my-awesome-presentation/custom/custom.scss
+      | my-awesome-presentation/custom/header.html
+      | my-awesome-presentation/custom/footer.html
+      | $ <b>cd my-awesome-presentation</b>
+      | $ <b>revelry build</b>
+      | www/index.html
+      | ...

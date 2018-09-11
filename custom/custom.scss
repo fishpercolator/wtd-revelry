@@ -1,0 +1,52 @@
+.reveal {
+  $primary: #660080;
+  $white: #ffffff;
+  $font: Oxygen, sans-serif;
+  font-family: $font;
+
+  .slide-background {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  section.present {
+    background: linear-gradient(180deg, transparentize($white, 0.5), $white);
+    border-radius: 0.5rem;
+  }
+  img.featured {
+    height: 500px;
+    &.less {
+      height: 400px;
+    }
+  }
+  img.borderless {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+  img.logo {
+    @extend img.borderless;
+    max-height: 3em;
+  }
+  img.screenshot {
+    @extend img.borderless;
+    max-height: 400px;
+  }
+  h1, h2, h3 {
+    font-family: $font;
+    color: $primary;
+    text-transform: none;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2.subtitle {
+    color: currentColor;
+  }
+  h2 img {
+    max-height: 1em;
+    @extend img.borderless;
+  }
+  code b {
+    color: $primary;
+  }
+}
