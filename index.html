@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Revelry</title>
+  <meta name="description" content="Death to PowerPoint">
+  <meta name="author" content="Rich Daley">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+  
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Include the appropriate print stylesheet -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    link.media = 'print';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section><h1>Revelry</h1><h2 class="subtitle">Death to PowerPoint</h2><img class="logo" src="img/logo.png"></section><section><section><h2>I hate PowerPoint</h2><img class="featured" src="img/garbage.jpg"></section><section><h2>Reveal.js</h2><img class="screenshot" src="img/reveal.png"><aside class="notes">Even has speaker notes with now &amp; next.</aside></section><section><h2>But</h2><blockquote>“Unzip and replace the example contents in index.html with your own”</blockquote></section><section><h2>Revelry</h2><pre><code>$ <b>revelry new --pug my-awesome-presentation</b>
+my-awesome-presentation/Revfile.json
+my-awesome-presentation/slides.pug
+my-awesome-presentation/.gitignore
+my-awesome-presentation/custom/custom.scss
+my-awesome-presentation/custom/header.html
+my-awesome-presentation/custom/footer.html
+$ <b>cd my-awesome-presentation</b>
+$ <b>revelry build</b>
+www/index.html
+...</code></pre></section></section><section><section><h2>All just code</h2><p>Pug, includes</p><img class="screenshot" src="img/code.png"></section><section><h2>Theming</h2><p>It's CSS (and Sass)</p><img class="screenshot" src="img/sass.png"></section><section><h2>All web tech</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/KxwcQ1dapw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section></section><section><img class="logo" src="img/logo.png"><p><a href="https://github.com/fishpercolator/revelry">github:fishpercolator/revelry</a></p><code>npm install -g revelry</code><p>@fishpercolator</p><p>@pedantic_git</p></section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  
+  <script>
+    Reveal.initialize({ theme:"white",
+    transition:"slide",
+    controls:true,
+    progress:true,
+    history:true,
+    center:true,
+    dependencies:[ { src:"plugin/markdown/marked.js" },
+      { src:"plugin/markdown/markdown.js" },
+      { src:"plugin/notes/notes.js",
+        async:true } ] });
+  </script>
+</body>
+</html>

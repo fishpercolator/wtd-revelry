@@ -1,0 +1,32 @@
+.reveal {
+  font-family: Oxygen, sans-serif; }
+  .reveal .slide-background {
+    background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: cover; }
+  .reveal section.present {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), #ffffff);
+    border-radius: 0.5rem; }
+  .reveal img.featured {
+    height: 500px; }
+    .reveal img.featured.less {
+      height: 400px; }
+  .reveal img.borderless, .reveal img.logo, .reveal img.screenshot, .reveal h2 img {
+    border: none;
+    background: none;
+    box-shadow: none; }
+  .reveal img.logo {
+    max-height: 3em; }
+  .reveal img.screenshot {
+    max-height: 400px; }
+  .reveal h1, .reveal h2, .reveal h3 {
+    font-family: Oxygen, sans-serif;
+    color: #660080;
+    text-transform: none; }
+  .reveal h1 {
+    font-size: 2em; }
+  .reveal h2.subtitle {
+    color: currentColor; }
+  .reveal h2 img {
+    max-height: 1em; }
+  .reveal code b {
+    color: #660080; }
